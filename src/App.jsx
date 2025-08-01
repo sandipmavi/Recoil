@@ -1,4 +1,5 @@
 import { RecoilRoot, atom, useRecoilValue, useSetRecoilState } from "recoil";
+import Nav from "./Nav";
 
 const count = atom({
   key: "countState",
@@ -9,6 +10,7 @@ function App() {
   return (
     <RecoilRoot>
       <Counter />
+      <Nav />
     </RecoilRoot>
   );
 }
